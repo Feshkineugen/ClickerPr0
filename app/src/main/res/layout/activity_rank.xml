@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B">
+
+    <TextView
+        android:id="@+id/rankView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Звание"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/bestResultView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rankView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="14dp"
+        android:text="Лучший результат: 0 (Игрок: Имя)"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/playerNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bestResultView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="112dp"
+        android:hint="Введи имя" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="224dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="42dp"
+        android:rotation="12"
+        android:rotationX="-2"
+        android:rotationY="2"
+        android:text="Если вы не смогли побить рекорд,то вы не сможете ввести своё имя!" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="313dp"
+        android:layout_height="407dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="49dp"
+        app:srcCompat="@drawable/istockphoto_674806292_612x612" />
+
+</RelativeLayout>
+

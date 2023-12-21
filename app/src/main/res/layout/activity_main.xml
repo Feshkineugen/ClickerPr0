@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    android:backgroundTintMode="add"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timerView"
+        android:layout_width="317dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="-11dp"
+        android:text="Таймер:"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="25sp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/clickButton"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultView"
+        android:layout_alignParentEnd="false"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTintMode="add"
+        android:hapticFeedbackEnabled="false"
+        android:text="Жми!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textCursorDrawable="@android:drawable/alert_light_frame"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:icon="@drawable/icons8___50"
+        app:iconTint="#B82626"
+        app:iconTintMode="multiply"
+        app:rippleColor="#E11919"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/clickCountView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clickButton"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:textSize="25sp"
+        android:layout_marginEnd="169dp"
+        android:text="Клики: 0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="79dp"
+        app:srcCompat="@drawable/ico_get_to_the_general_slicker_poluchi_generala_kliker_1621557122" />
+
+
+</RelativeLayout>
