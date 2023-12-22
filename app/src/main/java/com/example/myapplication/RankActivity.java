@@ -26,14 +26,14 @@ public class RankActivity extends AppCompatActivity {
         TextView bestResultView = findViewById(R.id.bestResultView);
         EditText playerNameEditText = findViewById(R.id.playerNameEditText);
 
-        // Load the best result, player name, and rank
+    
         int bestResult = loadBestResult();
         String bestPlayerName = loadBestPlayerName();
         String bestRank = loadBestRank();
 
-        // Check if the current click count is better than the best result
+        
         if (clickCount > bestResult) {
-            // Update best result, player name, and rank if the current click count is better
+            
             saveBestResult(clickCount, calculateRank(clickCount));
             String playerName = playerNameEditText.getText().toString();
             if (!TextUtils.isEmpty(playerName)) {
@@ -41,7 +41,7 @@ public class RankActivity extends AppCompatActivity {
             }
             bestResultView.setText("Лучший результат: " + clickCount + " (Игрок: " + playerName + ", Звание: " + calculateRank(clickCount) + ")");
         } else {
-            // Display the best result, player name, and rank without prompting for player name
+            
             bestResultView.setText("Лучший результат: " + bestResult + " (Игрок: " + bestPlayerName + ", Звание: " + bestRank + ")");
             playerNameEditText.setVisibility(View.GONE);  // Hide the player name input field
         }
@@ -100,7 +100,7 @@ public class RankActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        // Save the best result, player name, and rank when the activity is destroyed
+        
         int clickCount = getIntent().getIntExtra("clickCount", 0);
         saveBestResult(clickCount, calculateRank(clickCount));
         String playerName = ((EditText) findViewById(R.id.playerNameEditText)).getText().toString();
