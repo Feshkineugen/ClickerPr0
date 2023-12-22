@@ -43,7 +43,7 @@ public class RankActivity extends AppCompatActivity {
         } else {
             
             bestResultView.setText("Лучший результат: " + bestResult + " (Игрок: " + bestPlayerName + ", Звание: " + bestRank + ")");
-            playerNameEditText.setVisibility(View.GONE);  // Hide the player name input field
+            playerNameEditText.setVisibility(View.GONE); 
         }
 
         String rank = calculateRank(clickCount);
